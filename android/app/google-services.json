@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "273284962142",
+    "project_id": "selfjudge-a7a4c",
+    "storage_bucket": "selfjudge-a7a4c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273284962142:android:5f3f4a22930240a798a1cf",
+        "android_client_info": {
+          "package_name": "com.selfjudge.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtbQlRNboTPaHtdsP_tdNEen8_DJZPuuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
