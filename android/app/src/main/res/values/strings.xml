@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Selfjudge</string>
+    
+    <!-- Auth -->
+    <string name="sign_in">Accedi</string>
+    <string name="sign_up">Registrati</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Password dimenticata?</string>
+    <string name="sign_out">Disconnetti</string>
+    
+    <!-- Main -->
+    <string name="judge">Giudice</string>
+    <string name="battle">Battaglia</string>
+    <string name="profile">Profilo</string>
+    
+    <!-- Judge -->
+    <string name="artist_name">Nome Artista</string>
+    <string name="your_lyrics">I tuoi testi</string>
+    <string name="evaluate">Valuta</string>
+    <string name="evaluation_results">Risultati Valutazione</string>
+    
+    <!-- Battle -->
+    <string name="text_a">Testo A</string>
+    <string name="text_b">Testo B</string>
+    <string name="start_battle">Inizia Battaglia</string>
+    <string name="battle_results">Risultati Battaglia</string>
+    <string name="winner">Vincitore</string>
+    <string name="draw">Pareggio</string>
+    
+    <!-- Credits -->
+    <string name="credits">Crediti</string>
+    <string name="solo_credits">Solo: %1$d</string>
+    <string name="battle_credits">Battaglia: %1$d</string>
+    <string name="buy_credits">Acquista Crediti</string>
+    <string name="insufficient_credits">Crediti insufficienti</string>
+    
+    <!-- Errors -->
+    <string name="error_generic">Si è verificato un errore</string>
+    <string name="error_network">Errore di connessione</string>
+    <string name="error_auth">Errore di autenticazione</string>
+    <string name="error_empty_fields">Compila tutti i campi</string>
+</resources>

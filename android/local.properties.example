@@ -1,0 +1,8 @@
+# Example local.properties file
+# Copy this to local.properties and configure with your values
+
+# API Configuration
+api.base.url=https://your-api-url.onrender.com
+
+# Android SDK location
+# sdk.dir=/Users/username/Library/Android/sdk
