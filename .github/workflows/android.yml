@@ -41,6 +41,7 @@ jobs:
       run: |
         cd android
         echo "api.base.url=https://selfjudge-api.onrender.com" > local.properties
+        echo "openai.api.key=${{ secrets.OPENAI_API_KEY }}" >> local.properties
 
     - name: Create dummy google-services.json
       run: |
@@ -121,6 +122,7 @@ jobs:
       run: |
         cd android
         echo "api.base.url=https://selfjudge-api.onrender.com" > local.properties
+        echo "openai.api.key=${{ secrets.OPENAI_API_KEY }}" >> local.properties
 
     - name: Create dummy google-services.json
       run: |

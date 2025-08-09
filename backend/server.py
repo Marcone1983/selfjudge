@@ -28,6 +28,20 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 app = FastAPI(title="Selfjudge API")
 
+# ----- health check -----
+@app.get("/")
+def health_check():
+    return {
+        "status": "online",
+        "service": "Selfjudge API",
+        "version": "1.0.0",
+        "endpoints": ["/bootstrap", "/judge", "/battle"]
+    }
+
+@app.get("/health")
+def health():
+    return {"status": "healthy"}
+
 # ----- models -----
 class JudgeReq(BaseModel):
     artist: str
