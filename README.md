@@ -1,5 +1,7 @@
 # 🎤 Selfjudge
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Marcone1983/selfjudge)
+
 **AI-powered rap lyrics evaluation platform**
 
 Selfjudge è una piattaforma che utilizza l'intelligenza artificiale per valutare testi rap/hip-hop da 5 prospettive diverse: psichiatra, produttore musicale, critico letterario, ascoltatore medio e il "vibe" di un artista specifico.
