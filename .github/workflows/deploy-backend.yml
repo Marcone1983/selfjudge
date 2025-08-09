@@ -1,0 +1,34 @@
+name: Deploy Backend to Render
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'backend/**'
+      - '.github/workflows/deploy-backend.yml'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Deploy to Render
+      env:
+        deploy_url: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+      run: |
+        if [ -n "$deploy_url" ]; then
+          curl "$deploy_url"
+          echo "Deploy triggered!"
+        else
+          echo "RENDER_DEPLOY_HOOK_URL not configured"
+          echo "To set up automatic deployment:"
+          echo "1. Go to https://render.com and create a new Web Service"
+          echo "2. Connect GitHub repository: Marcone1983/selfjudge"
+          echo "3. Use root directory: backend"
+          echo "4. Get deploy hook URL from Settings > Deploy Hook"
+          echo "5. Add it as GitHub secret: RENDER_DEPLOY_HOOK_URL"
+        fi
